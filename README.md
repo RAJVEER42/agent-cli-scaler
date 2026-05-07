@@ -100,7 +100,7 @@ The reason `writeFile` exists separately from `executeCommand` is to avoid the c
 ### Prerequisites
 
 - Node.js 18+
-- An API key for one of: OpenAI, Anthropic (Claude), or Google Gemini
+- An API key for one of: OpenAI, Anthropic (Claude), Google Gemini , or Hugging Face
 
 ### Install
 
@@ -117,10 +117,10 @@ cp .env.example .env
 Then edit `.env`:
 
 ```env
-# Anthropic (Claude) via OpenAI-compatible endpoint
-OPENAI_API_KEY=sk-ant-...
-OPENAI_BASE_URL=https://api.anthropic.com/v1/
-MODEL=claude-haiku-4-5
+# Hugging Face Inference API
+OPENAI_API_KEY=hf_...
+OPENAI_BASE_URL=https://router.huggingface.co/v1
+MODEL=openai/gpt-oss-120b
 ```
 
 Three provider blocks are pre-written in `.env.example` — just uncomment the one you want and comment out the others.
@@ -137,7 +137,7 @@ You'll see:
 
 ```
 Agent CLI ready. Type an instruction, or 'exit' to quit.
-Model: claude-haiku-4-5
+Model: meta-llama/Llama-3.3-70B-Instruct
 Try: Clone the Scaler website with header, hero, and footer into a folder called scaler_clone.
 
 you >
