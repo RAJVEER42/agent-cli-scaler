@@ -180,16 +180,6 @@ Then visit **[http://127.0.0.1:5173/](http://127.0.0.1:5173/)**.
 
 ---
 
-## Bonus: brutalist blog
-
-The [`brutalist_blog/`](brutalist_blog/) folder is a separate static site that demonstrates a brutalist UI direction.
-
-```bash
-python3 -m http.server 5174 --directory brutalist_blog
-```
-
----
-
 ## Tech stack
 
 * **Node.js** (ES modules)
@@ -202,10 +192,10 @@ python3 -m http.server 5174 --directory brutalist_blog
 
 ## Submission
 
-| Item                | Status                                |
-| ------------------- | ------------------------------------- |
-| GitHub repo         | *add link here once pushed*           |
-| YouTube demo (2–3m) | *add link here once recorded*         |
+| Item                | Status                                                                                    |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| GitHub repo         | [Github](https://github.com/RAJVEER42/agent-cli-scaler/)|
+| YouTube demo (2–3m) | [youtube](https://youtu.be/DRwTq1YmQv0?si=Lg2_r5nKrussO64h)        |
 | Agent loop          | Implemented in [`index.js`](index.js) |
 | Generated site      | [`scaler_clone/`](scaler_clone/)      |
 | Documentation       | This README                           |
